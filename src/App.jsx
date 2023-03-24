@@ -1,14 +1,14 @@
 import React  from 'react'
 import Header from "./components/header/Index"
-import Hero from "./components/hero"
-import About from "./components/about"
-import Cards from "./components/cards"
-import Courses from "./components/kurslar"
+import Hero from "./components/hero/index"
+import About from "./components/about/index"
+import Cards from "./components/cards/index"
+import Courses from "./components/kurslar/index"
 import Footer from "./components/Footer/Index"
 import Order from "./components/Order/Index"
 import Mentors from "./components/Mentors/Index"
 import News from "./components/News/Index"
-import Certifiates from "./components/Certificates"
+import Certifiates from "./components/Certificates/Index"
 
 function App() {
 
