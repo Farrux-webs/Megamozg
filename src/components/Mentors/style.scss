@@ -1,5 +1,9 @@
 .mentors{
     margin-bottom: 100px;
+
+    .mentors-heading{
+        margin-bottom: 40px;
+    }
     .mentors-list{
         display: flex;
         align-items: center;
@@ -44,13 +48,18 @@
                 height: 100%;
 
                 img{
-                    transform: translateY(-100px)
+                    transform: translateY(-20px)
                 }
 
                 span{
-                    transform: translateY(-100px)
+                    transform: translateY(-20px)
                 }
+
+
+
             }
+
+
 
 
         }

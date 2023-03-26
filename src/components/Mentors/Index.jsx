@@ -7,8 +7,9 @@ import { useSpring, animated } from "react-spring";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./style.scss"
+import content from "../../Localization/content.js"
 
-function Index() {
+function Index({setLang, lang}) {
   useEffect(()=>{
     AOS.init()
   })
@@ -25,11 +26,15 @@ function Index() {
           </animated.div>
         );
       }
+
+
+      const langs = content[lang]
+      const {Mentors} = langs
   return (
     <>
       <section className="mentors">
         <div className="container">
-          <h2>НАСТАВНИКИ</h2>
+          <h2 className="mentors-heading">{Mentors.Heading}</h2>
           <ul
             className="mentors-list"
             data-aos="fade-right"
@@ -40,24 +45,24 @@ function Index() {
               data-aos="fade-right"
               data-aos-duration="5000"
             >
-              <img src={Alina} alt="" /> <span>Алина</span>
+              <img src={Alina} alt="" /> <span>{Mentors.Alina}</span>
             </li>
             <li
               className="mentor"
               data-aos="fade-right"
               data-aos-duration="5000"
             >
-              <img src={Madina} alt="" /> <span>Мадина</span>
+              <img src={Madina} alt="" /> <span>{Mentors.Madina}</span>
             </li>
             <li
               className="mentor"
               data-aos="fade-right"
               data-aos-duration="5000"
             >
-              <img src={Arina} alt="" /> <span>Арина</span>
+              <img src={Arina} alt="" /> <span>{Mentors.Arina}</span>
             </li>
             <li className="mentor">
-              <img src={Andrey} alt="" /> <span>Андрей</span>
+              <img src={Andrey} alt="" /> <span>{Mentors.Andrey}</span>
             </li>
           </ul>
           <div className="StatCardsWrapper">
@@ -70,7 +75,7 @@ function Index() {
               <strong className="StatNumber">
                 <Number n={60000} />+
               </strong>
-              <p className="StatType">Lorem ipsum dolor sit amet</p>
+              <p className="StatType">{Mentors.statFirst}</p>
             </div>
             <div
               className="StatCard"
@@ -81,7 +86,7 @@ function Index() {
               <strong className="StatNumber">
                 <Number n={150} />+
               </strong>
-              <p className="StatType">Lorem ipsum dolor sit amet</p>
+              <p className="StatType">{Mentors.statSecond}</p>
             </div>
             <div
               className="StatCard"
@@ -92,7 +97,7 @@ function Index() {
               <strong className="StatNumber">
                 <Number n={183000} />
               </strong>
-              <p className="StatType">Lorem ipsum dolor sit amet</p>
+              <p className="StatType">{Mentors.statThird}</p>
             </div>
           </div>
         </div>

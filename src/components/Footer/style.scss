@@ -1,14 +1,15 @@
 .footer {
     padding: 100px 0;
     border-top: 2px solid #D31B1B;
+
     .footer-contents {
         width: 100%;
         display: flex;
         align-items: flex-start;
 
         .footer-left {
-            width: 35%;
-            margin-right: 120px;
+            width: 32%;
+            margin-right: 100px;
 
             .footer__logo {
                 display: block;
@@ -48,114 +49,149 @@
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
-            width: 25%;
+            width: 33%;
             list-style-type: none;
-            margin-right: 200px;
+            margin-right: 120px;
+            
 
-            .footer-list-inline{
+            .footer-list-inline {
                 list-style-type: none;
-                .footer-list-inline-item {
-                        display: flex;
-                        align-items: center;
-                        margin-bottom: 8px;
-                
-                        img {
-                            margin-right: 10px;
-                        }
 
-                        .footer__Link{
-                            display: block;
-                            text-decoration: none;
-                            font-family: 'DM Sans';
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 20px;
-                                line-height: 26px;
-                            
-                                color: #FFFFFF;
-                                flex: none;
-                                order: 1;
-                                flex-grow: 0;
+                .footer-list-inline-item {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 8px;
+                    position: relative;
+
+
+
+                    &:hover {
+                        .footer__Link {
+                            position: relative;
+
+                            &::before {
+                                content: "";
+                                width: 100%;
+                                height: 2px;
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                background-color: #D31B1B;
+                                display: block;
+                            }
                         }
                     }
-            }
 
-          
-        }
+                    img {
+                        margin-right: 10px;
+                    }
 
-        .footer-right{
-            width: 25%;
-
-            .footer-left-title{
-                font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 300;
-                    font-size: 18px;
-                    line-height: 150%;
-                    color: #FFFFFF;
-                    margin-bottom: 15px;
-            }
-
-            .phone__number{
-                font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 25px;
-                    line-height: 140%;
-                    display: block;
-                    text-align: center;
-                    color: #FFFFFF;
-                    margin-bottom: 20px;
-            }
-
-            .footer__btn{
-                display: block;
-                background: linear-gradient(87.05deg, #F4013D 17.99%, #F0073E 43%, #F1013B 68.01%, #D90E3C 93.02%);
-                    box-shadow: 0px 3px 49px -3px rgba(226, 72, 72, 0.76), inset 0px -4px 0px #8F1919;
-                    border-radius: 20px;
-
-                    font-family: 'Allerta Stencil';
+                    .footer__Link {
+                        display: block;
+                        text-decoration: none;
+                        font-family: 'DM Sans';
+                        font-style: normal;
                         font-weight: 400;
                         font-size: 20px;
-                        line-height: 117.2%;
+                        line-height: 26px;
+
                         color: #FFFFFF;
-                        width: 200px;
-                        padding: 16px 0;
-                        cursor: pointer;
-                        margin: auto;
-                        margin-bottom: 20px;
+                        flex: none;
+                        order: 1;
+                        flex-grow: 0;
+                        position: relative;
+
+                        &::before {
+                            content: "";
+                            width: 0;
+                            height: 2px;
+                            position: absolute;
+                            left: 50%;
+                            bottom: 0;
+                            background-color: #D31B1B;
+                            transition: all 0.3s;
+                        }
+                    }
+                }
             }
 
-            .footer__social__media{
+
+        }
+
+        .footer-right {
+            width: 25%;
+
+            .footer-left-title {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 150%;
+                color: #FFFFFF;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            .phone__number {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 140%;
+                display: block;
+                text-align: center;
+                color: #FFFFFF;
+                margin-bottom: 20px;
+            }
+
+            .footer__btn {
+                display: block;
+                background: linear-gradient(87.05deg, #F4013D 17.99%, #F0073E 43%, #F1013B 68.01%, #D90E3C 93.02%);
+                box-shadow: 0px 3px 49px -3px rgba(226, 72, 72, 0.76), inset 0px -4px 0px #8F1919;
+                border-radius: 20px;
+
+                font-family: 'Allerta Stencil';
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 117.2%;
+                color: #FFFFFF;
+                width: 200px;
+                padding: 16px 0;
+                cursor: pointer;
+                margin: auto;
+                margin-bottom: 20px;
+            }
+
+            .footer__social__media {
                 display: flex;
                 list-style-type: none;
                 justify-content: center;
 
 
-                .footer__social_media_item{
+                .footer__social_media_item {
                     display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        padding: 14px;
-                        gap: 10px;
-                        background: #FFFFFF;
-                        border-radius: 4px;
-                        flex: none;
-                        order: 1;
-                        flex-grow: 0;
-                        margin-right: 6px;
-                        width: 48px;
-                        cursor: pointer;
-                        transition: all 0.3s;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 14px;
+                    gap: 10px;
+                    background: #FFFFFF;
+                    border-radius: 4px;
+                    flex: none;
+                    order: 1;
+                    flex-grow: 0;
+                    margin-right: 6px;
+                    width: 48px;
+                    cursor: pointer;
+                    transition: all 0.3s;
 
-                        &:hover{
-                            background-color: #F4013D;
+                    &:hover {
+                        background-color: #F4013D;
 
-                            img{
-                                filter: invert(1);
-                            }
+                        img {
+                            filter: invert(1);
                         }
-                        
+                    }
+
                 }
             }
         }

@@ -5,15 +5,19 @@ import Alina from "../../assets/Alina.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./style.scss"
+import Content from "../../Localization/content.js"
 
-function Index() {
-  useEffect(()=>{
-    AOS.init()
-  })
+function Index({ setLang, lang }) {
+  useEffect(() => {
+    AOS.init();
+  });
+
+  const langs = Content[lang];
+  const { Certificates } = langs;
   return (
     <section className="Certications">
       <div className="container" data-aos="fade-left" data-aos-duration="3000">
-        <h2 className="certificateHeading">СЕРТИФИКАТЫ</h2>
+        <h2 className="certificateHeading">{Certificates.Certificate}</h2>
         <ul className="Certications-list">
           <li className="Certication">
             <img src={Nuc} alt="" />

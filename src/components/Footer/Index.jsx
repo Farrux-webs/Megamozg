@@ -6,9 +6,12 @@ import facebook from "../../assets/facebook.svg"
 import instagram from "../../assets/instagram.svg"
 import linkedin from "../../assets/linkedin.svg"
 import twitter from "../../assets/twitter.svg"
+import Content from "../../Localization/content.js"
 import "./style.scss"
 
-function Index() {
+function Index({setLang, lang}) {
+  const langs = Content[lang]
+  const {Footer} = langs
   return (
     <>
       <footer className="footer">
@@ -17,39 +20,47 @@ function Index() {
             <NavLink className="footer__logo">
               <img src={Logo} width="390" height="95" alt="" />
             </NavLink>
-            <h2 className="Education">Education</h2>
-            <p className="edu__desc">
-              Lorem ipsum dolor sit amet, consectetur adipis cing elit. Amet,
-              vestibulum euismod nullam the elementum. Urna, posuere nisi sit
-              gravid.
-            </p>
+            <h2 className="Education">{Footer.Education}</h2>
+            <p className="edu__desc">{Footer.FooterDesc}</p>
           </div>
           <ul className="footer__list">
             <li className="footer__list__item">
               <ul className="footer-list-inline">
                 <li className="footer-list-inline-item">
                   <img src={Vector} alt="" />
-                  <NavLink className="footer__Link">About Us</NavLink>
+                  <NavLink className="footer__Link">
+                    {Footer.AboutUsLink}
+                  </NavLink>
                 </li>
                 <li className="footer-list-inline-item">
                   <img src={Vector} alt="" />
-                  <NavLink className="footer__Link">Graduation</NavLink>
+                  <NavLink className="footer__Link">
+                    {Footer.GraduationLink}
+                  </NavLink>
                 </li>
                 <li className="footer-list-inline-item">
                   <img src={Vector} alt="" />
-                  <NavLink className="footer__Link">Scholarship</NavLink>
+                  <NavLink className="footer__Link">
+                    {Footer.ScolarshipLink}
+                  </NavLink>
                 </li>
                 <li className="footer-list-inline-item">
                   <img src={Vector} alt="" />
-                  <NavLink className="footer__Link">Admissions</NavLink>
+                  <NavLink className="footer__Link">
+                    {Footer.AdmissionsLink}
+                  </NavLink>
                 </li>
                 <li className="footer-list-inline-item">
                   <img src={Vector} alt="" />
-                  <NavLink className="footer__Link">International</NavLink>
+                  <NavLink className="footer__Link">
+                    {Footer.InternationalLink}
+                  </NavLink>
                 </li>
                 <li className="footer-list-inline-item">
                   <img src={Vector} alt="" />
-                  <NavLink className="footer__Link">Events</NavLink>
+                  <NavLink className="footer__Link">
+                    {Footer.EventsLink}
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -57,31 +68,39 @@ function Index() {
               <ul className="footer-list-inline">
                 <li className="footer-list-inline-item">
                   <img src={Vector} alt="" />
-                  <NavLink className="footer__Link">Language</NavLink>
+                  <NavLink className="footer__Link">
+                    {Footer.LanguageLink}
+                  </NavLink>
                 </li>
                 <li className="footer-list-inline-item">
                   <img src={Vector} alt="" />
-                  <NavLink className="footer__Link">WordPress</NavLink>
+                  <NavLink className="footer__Link">
+                    {Footer.WordpressLink}
+                  </NavLink>
                 </li>
                 <li className="footer-list-inline-item">
                   <img src={Vector} alt="" />
-                  <NavLink className="footer__Link">Privacy</NavLink>
+                  <NavLink className="footer__Link">
+                    {Footer.PrivacyLink}
+                  </NavLink>
                 </li>
                 <li className="footer-list-inline-item">
                   <img src={Vector} alt="" />
-                  <NavLink className="footer__Link">FAQs</NavLink>
+                  <NavLink className="footer__Link">{Footer.FAQsLink}</NavLink>
                 </li>
                 <li className="footer-list-inline-item">
                   <img src={Vector} alt="" />
-                  <NavLink className="footer__Link">Support</NavLink>
+                  <NavLink className="footer__Link">
+                    {Footer.SupportLink}
+                  </NavLink>
                 </li>
               </ul>
             </li>
           </ul>
           <div className="footer-right">
-            <p className="footer-left-title">Звонок по Узбекистану бесплатный</p>
+            <p className="footer-left-title">{Footer.PhNumber}</p>
             <strong className="phone__number">+998 (99) 99-99-99</strong>
-            <button className="footer__btn">Перезвоните нам</button>
+            <button className="footer__btn">{Footer.CallLink}</button>
             <ul className="footer__social__media">
               <li className="footer__social_media_item">
                 <img src={facebook} alt="" />

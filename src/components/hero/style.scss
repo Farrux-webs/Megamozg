@@ -9,6 +9,8 @@
         margin-top: 150px;
         text-align: center;
 
+    
+
         .line1 {
             position: relative;
             bottom: 310px;
@@ -42,7 +44,7 @@
 
         }
 
-        h6 {
+       .heroDesc {
 
             z-index: 100;
             font-family: 'Laviossa RUS';
@@ -53,6 +55,9 @@
             /* or 41px */
 
             text-align: center;
+                width: calc(50%);
+                    margin: auto;
+                    margin-bottom: 10px;
 
             color: #EAE9E9;
         }
