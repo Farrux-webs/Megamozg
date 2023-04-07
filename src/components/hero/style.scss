@@ -5,11 +5,21 @@
 
     .conteiner {}
 
+
+        .topBG {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1000;
+            width: 100%;
+            object-fit: cover;
+        }
+
     .texts {
         margin-top: 150px;
         text-align: center;
 
-    
+
 
         .line1 {
             position: relative;
@@ -44,7 +54,7 @@
 
         }
 
-       .heroDesc {
+        .heroDesc {
 
             z-index: 100;
             font-family: 'Laviossa RUS';
@@ -55,9 +65,9 @@
             /* or 41px */
 
             text-align: center;
-                width: calc(50%);
-                    margin: auto;
-                    margin-bottom: 10px;
+            width: calc(50%);
+            margin: auto;
+            margin-bottom: 10px;
 
             color: #EAE9E9;
         }
@@ -71,9 +81,6 @@
                 color: white;
                 width: 200px;
                 height: 60px;
-                border: none;
-                background: linear-gradient(87.05deg, #FF003F 17.99%, #FF3766 33.07%, #E12653 75.67%, #FF3766 93.02%);
-                box-shadow: 0px 3px 49px -3px rgba(226, 72, 72, 0.76), inset 0px -4px 0px #8F1919;
                 border-radius: 15px;
                 cursor: pointer;
 
@@ -82,30 +89,33 @@
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 158.7%;
-                /* identical to box height, or 35px */
 
                 text-align: center;
-
+                background-color: #CE3333;
+                border: 2px solid #CE3333;
                 color: #FFFFFF;
                 transition: 0.2s ease;
 
 
                 &:hover {
-                    border: 3px solid #CE3333;
-                    background: none;
-
+                    color: white;
+                    width: 200px;
+                    height: 60px;
+                    border: none;
                     border-radius: 15px;
                     cursor: pointer;
+
+                    font-family: 'Laviossa RUS';
                     font-style: normal;
                     font-weight: 500;
                     font-size: 18px;
                     line-height: 158.7%;
-                    /* identical to box height, or 35px */
 
                     text-align: center;
-
+                    background-color: transparent;
+                    border: 2px solid #CE3333;
                     color: #FFFFFF;
-                    box-shadow: none;
+                    transition: 0.2s ease;
 
                 }
             }
@@ -114,7 +124,7 @@
                 color: white;
                 width: 200px;
                 height: 60px;
-                border: 3px solid #CE3333;
+                border: 2px solid #CE3333;
                 background: none;
 
                 border-radius: 15px;
@@ -123,7 +133,6 @@
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 158.7%;
-                /* identical to box height, or 35px */
 
                 text-align: center;
 
@@ -131,25 +140,362 @@
                 transition: 0.2s ease;
 
                 &:hover {
-                    border: none;
-                    background: linear-gradient(87.05deg, #FF003F 17.99%, #FF3766 33.07%, #E12653 75.67%, #FF3766 93.02%);
-                    box-shadow: 0px 3px 49px -3px rgba(226, 72, 72, 0.76), inset 0px -4px 0px #8F1919;
+                    color: white;
+                    width: 200px;
+                    height: 60px;
+                    background: none;
+
+                    border-radius: 15px;
+                    cursor: pointer;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 158.7%;
+                    text-align: center;
+
+                    color: #FFFFFF;
+                    transition: 0.2s ease;
+                    background-color: #CE3333;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1160px) {
+    .hero {
+        width: 80%;
+        margin: 0 auto;
+        color: white;
+
+        .conteiner {}
+
+        .texts {
+            margin-top: 150px;
+            text-align: center;
+
+
+
+            .line1 {
+                display: none;
+            }
+
+            .line2 {
+                display: none;
+            }
+
+            h1 {
+                font-family: 'Laviossa RUS';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 50px;
+                line-height: 117.2%;
+                /* or 70px */
+
+                text-align: center;
+
+                background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                margin-bottom: 20px;
+
+            }
+
+            .heroDesc {
+
+                z-index: 100;
+                font-family: 'Laviossa RUS';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 26px;
+                line-height: 158.7%;
+                /* or 41px */
+
+                text-align: center;
+                width: 600px;
+                margin: auto;
+                margin-bottom: 20px;
+
+                color: #EAE9E9;
+            }
+
+            .btns {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+
+                button:nth-child(1) {
+                    color: white;
+                    width: 200px;
+                    height: 60px;
                     border-radius: 15px;
                     cursor: pointer;
 
                     font-family: 'Laviossa RUS';
                     font-style: normal;
                     font-weight: 500;
-
+                    font-size: 18px;
                     line-height: 158.7%;
-                    border: 3px solid #CE3333;
+
+                    text-align: center;
+                    background-color: #CE3333;
+                    border: 2px solid #CE3333;
+                    color: #FFFFFF;
+                    transition: 0.2s ease;
+
+
+                    &:hover {
+                        color: white;
+                        width: 200px;
+                        height: 60px;
+                        border: none;
+                        border-radius: 15px;
+                        cursor: pointer;
+
+                        font-family: 'Laviossa RUS';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 158.7%;
+
+                        text-align: center;
+                        background-color: transparent;
+                        border: 2px solid #CE3333;
+                        color: #FFFFFF;
+                        transition: 0.2s ease;
+
+                    }
+                }
+
+                button:nth-child(2) {
+                    color: white;
+                    width: 200px;
+                    height: 60px;
+                    border: 2px solid #CE3333;
+                    background: none;
+
+                    border-radius: 15px;
+                    cursor: pointer;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 158.7%;
 
                     text-align: center;
 
                     color: #FFFFFF;
-                    
+                    transition: 0.2s ease;
+
+                    &:hover {
+                        color: white;
+                        width: 200px;
+                        height: 60px;
+                        background: none;
+
+                        border-radius: 15px;
+                        cursor: pointer;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 158.7%;
+                        text-align: center;
+
+                        color: #FFFFFF;
+                        transition: 0.2s ease;
+                        background-color: #CE3333;
+                    }
                 }
             }
         }
     }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        padding-top: 100px;
+        width: 80%;
+        margin: 0 auto;
+        color: white;
+
+        .conteiner {}
+
+        .texts {
+            margin-top: 0;
+            text-align: center;
+
+
+
+            .line1 {
+                display: none;
+            }
+
+            .line2 {
+                display: none;
+            }
+
+            h1 {
+                font-family: 'Laviossa RUS';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 42px;
+                line-height: 117.2%;
+                /* or 70px */
+
+                text-align: center;
+
+                background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                margin-bottom: 20px;
+
+            }
+
+            .heroDesc {
+
+                z-index: 100;
+                font-family: 'Laviossa RUS';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 21px;
+                line-height: 158.7%;
+                /* or 41px */
+
+                text-align: center;
+                width: 80%;
+                margin: auto;
+                margin-bottom: 30px;
+
+                color: #EAE9E9;
+            }
+
+            .btns {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-direction: column;
+                align-items: center;
+
+
+                button:nth-child(1) {
+                    color: white;
+                    width: 80%;
+                    height: 60px;
+                    border-radius: 15px;
+                    cursor: pointer;
+
+                    font-family: 'Laviossa RUS';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 158.7%;
+
+                    text-align: center;
+                    background-color: #CE3333;
+                    border: 2px solid #CE3333;
+                    color: #FFFFFF;
+                    transition: 0.2s ease;
+
+
+                    &:hover {
+                        color: white;
+                        width: 200px;
+                        height: 60px;
+                        border: none;
+                        border-radius: 15px;
+                        cursor: pointer;
+
+                        font-family: 'Laviossa RUS';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 158.7%;
+
+                        text-align: center;
+                        background-color: transparent;
+                        border: 2px solid #CE3333;
+                        color: #FFFFFF;
+                        transition: 0.2s ease;
+
+                    }
+                }
+
+                button:nth-child(2) {
+                    color: white;
+                    width: 80%;
+                    height: 60px;
+                    border: 2px solid #CE3333;
+                    background: none;
+
+                    border-radius: 15px;
+                    cursor: pointer;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 158.7%;
+
+                    text-align: center;
+
+                    color: #FFFFFF;
+                    transition: 0.2s ease;
+
+                    &:hover {
+                        color: white;
+                        width: 200px;
+                        height: 60px;
+                        background: none;
+
+                        border-radius: 15px;
+                        cursor: pointer;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 158.7%;
+                        text-align: center;
+
+                        color: #FFFFFF;
+                        transition: 0.2s ease;
+                        background-color: #CE3333;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 520px) {
+
+    .hero {
+
+        .texts {
+            width: 100%;
+
+            h1{
+                font-size: 27px;
+            }
+            .heroDesc {
+
+                z-index: 100;
+                font-family: 'Laviossa RUS';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 158.7%;
+                /* or 41px */
+
+                text-align: center;
+                width: 100%;
+                margin: auto;
+                margin-bottom: 30px;
+
+                color: #EAE9E9;
+            }
+        }
+
+    }
+
 }

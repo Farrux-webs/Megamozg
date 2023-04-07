@@ -3,12 +3,16 @@
 
     .mentors-heading{
         margin-bottom: 40px;
+        margin-left: 70px;
+        color: #FFFFFF;
     }
     .mentors-list{
         display: flex;
         align-items: center;
+        justify-content: center;
         list-style-type: none;
-        margin-bottom: 100px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
 
         .mentor{
             width: 310px;
@@ -69,8 +73,9 @@
             .StatCardsWrapper {
                 width: 100%;
                 display: grid;
-                grid-template-columns: repeat(3, 288px);
+                grid-template-columns: repeat(1, 1fr);
                 justify-content: center;
+                flex-direction: column;
                 gap: 24px;
     
                 .StatCard {
@@ -118,4 +123,12 @@
                 }
             }
 
+}
+
+@media only screen and (max-width: 1330px){
+    .mentors{
+        .mentors-list{
+
+        }
+    }
 }

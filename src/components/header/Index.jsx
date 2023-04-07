@@ -17,21 +17,15 @@ function Index({setLang, lang}) {
 
 const langs = content[lang]
 const {navbar} = langs
+  const elNavbar = useRef(null);
 
   return (
     <header className="header">
       <div className="container headContents">
-        <img
-          src={topBG}
-          width="1000"
-          height="700"
-          className="topBG"
-          alt="background photo"
-        />
-        <nav className="navbar">
-          <NavLink>
-            <img src={Logo} alt="Logotip" />
-          </NavLink>
+        <NavLink className="logotip">
+          <img src={Logo} alt="Logotip" />
+        </NavLink>
+        <nav className="navbar" ref={elNavbar}>
           <ul className="nav__list">
             <li className="nav__item">
               <NavLink className="nav__link">{navbar.AboutUS}</NavLink>
@@ -48,7 +42,7 @@ const {navbar} = langs
           </ul>
 
           <div className="LangHeader">
-            <img src={lang === 'ru' ? RU : UZ} width="18" height="18" alt="" />
+            <img src={lang === "ru" ? RU : UZ} width="22" height="22" alt="" />
             <select
               name="lang"
               id="lang"
@@ -63,27 +57,26 @@ const {navbar} = langs
           </div>
 
           <button className="buttoncha">{navbar.contacts}</button>
-
-          <div className="header__hamburger">
-            <Hamburger
-              toggled={isOpen}
-              toggle={setOpen}
-              size={27}
-              rounded
-              hideOutline={false}
-              onToggle={() => {
-                elNavbar.current.classList.toggle("header__hamburger--active");
-              }}
-            />
-          </div>
         </nav>
-        <img
+        <div className="header__hamburger">
+          <Hamburger
+            toggled={isOpen}
+            toggle={setOpen}
+            size={27}
+            rounded
+            hideOutline={false}
+            onToggle={() => {
+              elNavbar.current.classList.toggle("header__hamburger--active");
+            }}
+          />
+        </div>
+        {/* <img
           src={Palts}
           width="550"
           height="450"
           className="finger"
           alt="barmoq izi"
-        />
+        /> */}
       </div>
     </header>
   );

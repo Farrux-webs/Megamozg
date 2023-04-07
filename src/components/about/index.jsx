@@ -29,7 +29,7 @@ const index = ({setLang, lang}) => {
       >
         <div className="text">
           <h1 className="aboutUs__heading">{AboutUS.heading}</h1>
-          <h5>{AboutUS.description}</h5>
+          <p className="aboutUs__desc">{AboutUS.description}</p>
         </div>
         <div className="imgs">
           <img

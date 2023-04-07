@@ -4,7 +4,7 @@
     .order-heading{
         font-family: 'Allerta Stencil';
             font-weight: 400;
-            font-size: 60px;
+            font-size: 40px;
             line-height: 117.2%;
             color: #FFFFFF;
             margin-bottom: 30px;
@@ -49,6 +49,26 @@
                 padding: 20px 0;
                 width: 300px;
                 cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .order{
+        .order-inputs_wrapper{
+            flex-direction: column;
+            gap: 20px;
+            justify-content: start;
+            align-items: center;
+
+            .order-inputs{
+                width: 100%;
+                margin-right: 0;
+            }
+
+            .order-btn{
+                width: 100%
+            }
         }
     }
 }

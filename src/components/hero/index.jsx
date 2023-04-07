@@ -4,6 +4,7 @@ import chiziq1 from "../../assets/chiziq1.png";
 import chiziq2 from "../../assets/chiziq2.png";
 import light from "../../assets/lightning.png"
 import content from "../../Localization/content.js"
+import topBG from "../../assets/topBG.jpg";
 
 
 const index = ({setlang, lang}) => {
@@ -20,6 +21,13 @@ const index = ({setlang, lang}) => {
   return (
     <div className="hero">
       <div className="container">
+        <img
+          src={topBG}
+          width="1000"
+          height="700"
+          className="topBG"
+          alt="background photo"
+        />
         <div className="texts">
           <h1>{intro.heading}</h1>
           <h6 class="heroDesc">{intro.description}</h6>

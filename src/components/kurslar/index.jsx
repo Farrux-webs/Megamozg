@@ -45,10 +45,6 @@ const index = ({setLang, lang}) => {
                   <img src={kor} alt="" />
                 </div>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Amet donec rutrum
-                habitasse eu interdum dignissim arcu.{" "}
-              </p>
               <div className="kor">
                 <img src={kor} alt="" />
               </div>

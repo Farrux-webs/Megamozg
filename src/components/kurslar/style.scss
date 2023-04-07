@@ -1,28 +1,32 @@
-.kurslar{
+.kurslar {
     max-width: 1724px;
-    margin:  100px auto;
+    margin: 100px auto;
 
-    .container{
-        margin:  0 auto;
+    .container {
+        margin: 0 auto;
         color: white;
-        .sar1{
+
+        .sar1 {
             font-family: 'Laviossa RUS';
-font-style: normal;
-font-weight: 500;
-font-size: 60px;
-line-height: 117.2%;
-/* or 70px */
+            font-style: normal;
+            font-weight: 500;
+            font-size: 60px;
+            line-height: 117.2%;
+            /* or 70px */
 
 
-color: #FFFFFF;
+            color: #FFFFFF;
 
         }
-        .cardss{
-            display: flex;
-            justify-content: space-between;
 
-            .card{
-                max-width: 400px;
+        .cardss {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0;
+
+            .card {
+                width: 90%;
                 padding: 20px;
                 border: 2px solid red;
                 position: relative;
@@ -31,79 +35,127 @@ color: #FFFFFF;
                 align-items: center;
                 flex-direction: column;
                 border-radius: 15px;
-              gap: 20px;
-              transition: all 0.3s ease;
-              cursor: pointer;
-             
-              &:hover{
+                gap: 20px;
+                transition: all 0.3s ease;
+                margin-right: 30px;
+                cursor: pointer;
+
                 .cardimg{
-                    transform: scale(1.1);
-                
+                    width: 100%;
+                    object-fit: cover;
+                    height: 320px;
                 }
-              }
-              .cardimg{
-                width: 100%;
-                transition: 0.3s ease;
-              }
-             
-              .texts{
-                p{
-                    font-family: 'Laviossa RUS';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 15px;
-                line-height: 117.2%;
-                /* or 18px */
-                
-                
-                background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
-                -webkit-background-clip: text;
-                margin: 20px 0;
-                background-clip: text;
-                }
-                .kor{
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 50%;
-                    background-color: red;
-                    position: absolute;
-                    right: 30px;
-                    bottom: 10px;
-                    img{
-                        position: relative;
+
+                .texts {
+                    p {
+                        font-family: 'Laviossa RUS';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 117.2%;
+                        /* or 18px */
+
+
+                        background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                        -webkit-background-clip: text;
+                        margin: 20px 0;
+                        background-clip: text;
+                    }
+
+                    .kor {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background-color: red;
+                        position: absolute;
                         right: 30px;
-                        top: 6px;
+                        bottom: 10px;
+
+                        img {
+                            position: relative;
+                            right: 30px;
+                            top: 6px;
+
+                        }
+                    }
+
+                    .lorems {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        margin: 10px 0;
+
+                        font-family: 'Laviossa RUS';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 117.2%;
+                        /* or 26px */
+
+
+                        background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+
+
+
+
 
                     }
                 }
-                
-.lorems{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 10px 0;
-  
-        font-family: 'Laviossa RUS';
-font-style: normal;
-font-weight: 500;
-font-size: 22px;
-line-height: 117.2%;
-/* or 26px */
 
-
-background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-
-   
-
-
-
-}
-              }
-                
             }
         }
     }
+}
+
+@media only screen and (max-width: 1330px) {
+
+    .kurslar {
+        .container {
+
+                    .sar1 {
+                            font-family: 'Laviossa RUS';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 45px;
+                            line-height: 117.2%;
+                            text-align: left;
+                            padding: 0 20px;
+                            margin-bottom: 20px;
+                            color: #FFFFFF;
+                    
+                        }
+
+            .cardss {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .card {
+                    max-width: 90%;
+                    padding: 20px;
+                    border: 2px solid red;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    border-radius: 15px;
+                    gap: 20px;
+                    transition: all 0.3s ease;
+                    margin-right: 0;
+                    cursor: pointer;
+                    margin-bottom: 20px;
+
+                    .cardimg {
+                            width: 90%;
+                            object-fit: cover;
+                            height: 300px;
+                        }
+                }
+            }
+        }
+    }
+
 }
