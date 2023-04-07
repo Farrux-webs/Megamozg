@@ -1,8 +1,7 @@
 .header {
-    max-width: 1724px;
     margin: 0 auto;
     position: fixed;
-    width: calc(100%);
+    width: 100%;
     z-index: 10;
     background-color: #00000098;
     top: 0;
@@ -157,7 +156,6 @@
 
 @media only screen and (max-width: 1160px) {
     .header {
-        max-width: 1724px;
         margin: 0 auto;
 
         position: relative;
